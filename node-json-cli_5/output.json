@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Learn Node.js",
+    "completed": false,
+    "status": "Pending"
+  },
+  {
+    "id": 2,
+    "title": "Practice npm",
+    "completed": true,
+    "status": "Completed"
+  },
+  {
+    "id": 3,
+    "title": "Practice Modules",
+    "completed": false,
+    "status": "Pending"
+  }
+]
