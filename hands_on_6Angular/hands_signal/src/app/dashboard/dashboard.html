@@ -1,6 +1,12 @@
-<p>dashboard works!</p>
-<h2>signal</h2>
-<h3>{{val()}}</h3>
-<button (click)="val.update(v => v + 1)">
-  Increase Value
-</button>
+<h1>Day 6 Hands-on: Angular Signals</h1>
+
+<div class="dashboard-card">
+  <h2>Signal Example</h2>
+
+  <p>Current Value:</p>
+  <h3>{{ val() }}</h3>
+
+  <button (click)="val.update(v => v + 1)">
+    Increase Value
+  </button>
+</div>
