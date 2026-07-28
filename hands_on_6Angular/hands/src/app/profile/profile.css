@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+  color: #1976d2;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.profile-card {
+  width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.profile-card h2,
+.profile-card h3 {
+  margin: 15px 0;
+  color: #333;
+}
+
+.profile-card h2 {
+  color: #2e7d32;
+}

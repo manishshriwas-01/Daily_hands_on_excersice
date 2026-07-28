@@ -1,0 +1,30 @@
+<h1>Day 7 hands on</h1>
+
+<div>
+    <button (click)="selectedFilter.set('All')">All</button>
+    <button (click)="selectedFilter.set('Active')">Active</button>
+    <button (click)="selectedFilter.set('Completed')">Completed</button>
+</div>
+
+
+
+@if (filterTasks().length > 0) {
+
+<ul>
+    @for (task of filterTasks(); track task.id) {
+    <li>
+        {{ task.title }}
+
+        @if (task.completed) {
+        <span class="done">Completed ✅</span>
+        } @else {
+        <span class="pending">Pending ⏳</span>
+        }
+    </li>
+    }
+</ul>
+
+} @else {
+
+<p>No Tasks Available</p>
+}
