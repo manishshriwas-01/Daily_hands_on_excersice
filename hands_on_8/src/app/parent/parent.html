@@ -1,0 +1,17 @@
+<h1>{{ pageTitle() }}</h1>
+
+@if(message()){
+
+<p class="success">
+    {{ message() }}
+</p>
+
+}
+
+<app-employee-form
+(employeeAdded)="onEmployeeAdded($event)">
+</app-employee-form>
+
+<app-employee-card
+[title]="pageTitle()">
+</app-employee-card>

@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "hands_signal": {
+    "hands_on_8": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "hands_signal:build:production"
+              "buildTarget": "hands_on_8:build:production"
             },
             "development": {
-              "buildTarget": "hands_signal:build:development"
+              "buildTarget": "hands_on_8:build:development"
             }
           },
           "defaultConfiguration": "development"

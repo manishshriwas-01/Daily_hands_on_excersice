@@ -1,0 +1,15 @@
+
+<form [formGroup]="employeeForm">
+    <label >Name</label>
+    <input type="text" formControlName="name" placeholder="Enter Name">
+    <br>
+    <br>
+
+    <label >Department</label>
+    <input type="text" formControlName="department" placeholder="Enter Department">
+    <br><br>
+
+    <button type="button" (click)="addEmployee()">
+        Add Employee
+    </button>
+</form>

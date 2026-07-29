@@ -1,0 +1,13 @@
+<!-- //comes from parent for practice of input -->
+<h2>{{title()}}</h2>
+
+<!-- service ka object -->
+@for(employee of employeeService.employees();track employee.id){
+    <div class="card">
+
+    <h3>{{ employee.name }}</h3>
+
+    <p>Department : {{ employee.department }}</p>
+
+</div>
+}
