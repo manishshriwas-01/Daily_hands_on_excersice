@@ -1,0 +1,67 @@
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+  
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+
+.card h3 {
+  margin: 0 0 10px;
+  color: #1976d2;
+}
+
+
+.card p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #555;
+}
+
+/* Status Colors */
+.completed {
+  color: green;
+  font-weight: bold;
+}
+
+.pending {
+  color: red;
+  font-weight: bold;
+}
+
+/* Button / Link */
+.card a {
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background-color: #125ca1;
+}

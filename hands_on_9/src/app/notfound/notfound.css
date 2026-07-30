@@ -1,0 +1,13 @@
+.not-found-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found-container h1 {
+    font-size: 48px;
+    color: #e53935;
+    font-weight: bold;
+    text-align: center;
+}
