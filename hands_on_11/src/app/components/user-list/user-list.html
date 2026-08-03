@@ -1,0 +1,16 @@
+<h2>Users</h2>
+
+@if (users$ | async; as users) {
+
+    @for (user of users; track user.id) {
+        <div class="card">
+            <h3>{{ user.name }}</h3>
+            <p>{{ user.email }}</p>
+        </div>
+    }
+
+} @else {
+
+    <p class="loading">Loading users...</p>
+
+}

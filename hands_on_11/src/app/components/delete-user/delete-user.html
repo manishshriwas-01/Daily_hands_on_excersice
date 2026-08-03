@@ -1,0 +1,28 @@
+<div class="container">
+
+    <h2>Delete User</h2>
+
+    <form [formGroup]="deleteForm"
+          (ngSubmit)="onDelete()">
+
+        <label>User ID</label>
+
+        <input
+            type="number"
+            formControlName="id"
+            placeholder="Enter User ID">
+
+        @if(deleteForm.controls.id.touched &&
+            deleteForm.controls.id.invalid){
+
+            <small>User ID is required</small>
+
+        }
+
+        <button type="submit">
+            Delete User
+        </button>
+
+    </form>
+
+</div>

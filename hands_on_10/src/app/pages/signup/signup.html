@@ -1,0 +1,97 @@
+<h2>Sign Up</h2>
+@if (successMessage()) {
+  <div class="success-message">
+    {{ successMessage() }}
+  </div>
+}
+
+<form [formGroup]="signUpForm" (ngSubmit)="register()">
+
+
+  <input
+    type="text"
+    formControlName="fullName"
+    placeholder="Enter Full Name">
+
+  @if (
+    signUpForm.controls.fullName.errors?.['required'] &&
+    signUpForm.controls.fullName.touched
+  ) {
+    <p>Name is required</p>
+  }
+
+  <br><br>
+
+
+  <input
+    type="email"
+    formControlName="email"
+    placeholder="Enter Email">
+
+  @if (
+    signUpForm.controls.email.errors?.['required'] &&
+    signUpForm.controls.email.touched
+  ) {
+    <p>Email is required</p>
+  }
+
+  @if (
+    signUpForm.controls.email.errors?.['email'] &&
+    signUpForm.controls.email.touched
+  ) {
+    <p>Invalid Email</p>
+  }
+
+  <br><br>
+
+
+  <input
+    type="password"
+    formControlName="password"
+    placeholder="Enter Password">
+
+  @if (
+    signUpForm.controls.password.errors?.['required'] &&
+    signUpForm.controls.password.touched
+  ) {
+    <p>Password is required</p>
+  }
+
+  @if (
+    signUpForm.controls.password.errors?.['minlength'] &&
+    signUpForm.controls.password.touched
+  ) {
+    <p>Password must be at least 8 characters.</p>
+  }
+
+  <br><br>
+
+
+  <input
+    type="password"
+    formControlName="confirmPassword"
+    placeholder="Confirm Password">
+
+  @if (
+    signUpForm.controls.confirmPassword.errors?.['required'] &&
+    signUpForm.controls.confirmPassword.touched
+  ) {
+    <p>Confirm Password is required</p>
+  }
+
+  @if (
+    signUpForm.errors?.['passwordMismatch'] &&
+    signUpForm.controls.confirmPassword.touched
+  ) {
+    <p>Passwords do not match</p>
+  }
+
+  <br><br>
+
+  <button
+    type="submit"
+    [disabled]="signUpForm.invalid">
+    Register
+  </button>
+
+</form>

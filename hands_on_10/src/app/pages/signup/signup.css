@@ -1,0 +1,84 @@
+/* Page Background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Form Container */
+form {
+  width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Input Focus */
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Error Message */
+p {
+  color: red;
+  font-size: 14px;
+  margin: 2px 0 10px;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Button Hover */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Disabled Button */
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.success-message {
+  width: 400px;
+  margin: 15px auto;
+  padding: 12px;
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #28a745;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
