@@ -1,0 +1,71 @@
+<div class="container">
+
+    <h2>Search Users</h2>
+
+    <input
+        type="text"
+        [formControl]="searchControl"
+        placeholder="Search user by name...">
+
+    @if (searchControl.value.trim().length < 3) {
+
+        <p class="info">
+            Type at least 3 characters to search users.
+        </p>
+
+    }
+
+
+    @if (users$ | async; as users) {
+
+        @if (loading()) {
+
+            <p class="loading">
+                Loading users...
+            </p>
+
+        }
+
+        @else if (error()) {
+
+            <p class="error">
+                {{ error() }}
+            </p>
+
+        }
+
+        @else if (users.length > 0) {
+
+            <div class="results">
+
+                @for (user of users; track user.id) {
+
+                    <div class="card">
+
+                        <h3>
+                            {{ user.name }}
+                        </h3>
+
+                        <p>
+                            {{ user.email }}
+                        </p>
+
+                    </div>
+
+                }
+
+            </div>
+
+        }
+
+        @else {
+
+            <p class="empty">
+                No users found.
+            </p>
+
+        }
+
+    }
+
+</div>
