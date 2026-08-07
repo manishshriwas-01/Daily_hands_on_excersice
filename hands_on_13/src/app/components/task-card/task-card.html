@@ -1,0 +1,12 @@
+<div appHighlight class="card">
+
+    <h2>{{ task.title }}</h2>
+
+    <p>Status : {{ task.status }}</p>
+
+    <p>
+        Created :
+        {{ task.createdAt | timeAgo }}
+    </p>
+
+</div>
