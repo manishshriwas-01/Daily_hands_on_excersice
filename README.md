@@ -1,106 +1,89 @@
 # Daily Hands-on Exercise
 
-# Node JSON CLI
+# Day 1 – JavaScript Basics**
 
-A simple Node.js CLI application that reads task data from a JSON file, transforms the data by adding a task status, and writes the updated data to a new JSON file. The project also includes a simple HTML/CSS/JavaScript dashboard to visualize the transformed tasks.
+This hands-on project focuses on the fundamentals of JavaScript, including variables, data types, `let` and `const`, scope,
+ comparison operators, truthy and falsy values, conditional statements, loops, and functions. As part of the exercises, I implemented 
+ **FizzBuzz** and a **Temperature Converter** using pure functions with input validation and manual test cases. Through this project, 
+ I built a strong foundation in JavaScript programming and problem-solving.
 
-## Features
+---
 
-* Read task data from `tasks.json`
-* Transform task data using a separate module
-* Add a `status` field (`Completed` or `Pending`)
-* Write transformed data to `output.json`
-* Display task statistics and task cards in a simple dashboard
-* Clean and modular project structure
+# Day 2 – Functions, Arrays & Objects (ES6)**
 
-## Project Structure
+This hands-on project explores modern JavaScript (ES6) features, including arrow functions, the `this` keyword, 
+destructuring, spread and rest operators, default parameters, and immutable programming techniques. It also demonstrates 
+the use of array methods such as `map()`, `filter()`, and `reduce()` by solving multiple array-based problems without using loops.
+ Through this project, I learned how to write clean, concise, and reusable JavaScript code using modern ES6 syntax.
 
-```text
-node-json-cli/
-│
-├── package.json
-├── index.js
-├── transformer.js
-├── tasks.json
-├── output.json
-│
-└── public/
-    ├── index.html
-    ├── style.css
-    └── app.js
-```
+---
 
-## Technologies Used
+# Day 3 – Async JavaScript**
 
-* Node.js
-* JavaScript (ES6)
-* HTML5
-* CSS3
+This hands-on project demonstrates asynchronous programming in JavaScript using callbacks, Promises, `async/await`, error handling with `try...catch`, and the Fetch API. It includes consuming a public REST API, displaying loading states, handling errors gracefully, and executing multiple API requests concurrently using `Promise.all()`. Through this project, I gained a solid understanding of asynchronous workflows and modern JavaScript API handling.
 
-## Installation
+---
 
-1. Create the project folder and navigate to it.
+# Day 4 – TypeScript Fundamentals**
 
-```bash
-mkdir node-json-cli
-cd node-json-cli
-```
+This hands-on project introduces the fundamentals of TypeScript, including primitive types, interfaces, type aliases, union types, literal types, enums, generics, strict mode, and TypeScript compiler configuration (`tsconfig.json`). It also includes converting a JavaScript module into strict TypeScript by replacing `any` with appropriate types and adding type annotations to all parameters and return values. Through this project, I learned how TypeScript improves code safety, maintainability, and scalability.
 
-2. Initialize the Node.js project.
+---
 
-```bash
-npm init -y
-```
+# Day 5 – Node.js & npm Fundamentals**
 
-3. Install dependencies (if any).
+This hands-on project demonstrates the fundamentals of Node.js and npm, including the Node.js runtime, npm packages, scripts, semantic versioning, CommonJS vs ES Modules, `package.json`, and JSON file operations. It includes building a Node.js CLI application that reads a JSON file, transforms the data, writes the output to a new file, and executes through an npm script. Through this project, I gained practical experience with backend JavaScript development and project configuration.
 
-```bash
-npm install
-```
+---
 
-## Run the Project
+# Day 6 – Angular Setup & Components**
 
-Generate the transformed JSON file.
+This hands-on project demonstrates Angular project setup using the Angular CLI and standalone components. It covers the Angular project structure, templates, component styling, and Angular Signals by building a simple dashboard card. Through this project, I learned how Angular applications are structured and how standalone components and reactive state management simplify frontend development.
 
-```bash
-npm start
-```
+---
 
-Open the dashboard:
+# Day 7 – Templates & Directives**
 
-* Open `public/index.html` using **Live Server** in VS Code.
+This hands-on project demonstrates Angular template syntax and control flow features, including interpolation, property binding, event binding, `@if`, `@for`, `@switch`, `ngClass`, and `ngStyle`. It includes building a Todo List UI with filtering, dynamic rendering, and an empty state without using a backend. Through this project, I learned how Angular dynamically updates the UI based on application state.
 
-## Input Example (`tasks.json`)
+---
 
-```json
-[
-  {
-    "id": 1,
-    "title": "Learn Node.js",
-    "completed": false
-  }
-]
-```
+# Day 8 – Component Communication & Dependency Injection**
 
-## Output Example (`output.json`)
+This hands-on project demonstrates component communication and Angular Dependency Injection. It includes using `@Input`, `@Output`, signal inputs, reusable services, and `providedIn: 'root'` to share state between parent and child components. Through this project, I learned how Angular components communicate efficiently while maintaining a clean and modular architecture.
 
-```json
-[
-  {
-    "id": 1,
-    "title": "Learn Node.js",
-    "completed": false,
-    "status": "Pending"
-  }
-]
-```
+---
 
-## Learning Outcomes
+# Day 9 – Routing & Navigation**
 
-* Node.js runtime
-* npm and package.json
-* CommonJS modules
-* Reading and writing JSON files
-* File System (`fs`) module
-* Data transformation using JavaScript
-* Basic frontend integration with HTML, CSS, and JavaScript
+This hands-on project demonstrates Angular Routing using standalone components. It includes configuring application routes, implementing navigation with `routerLink`, handling route parameters and query parameters, creating a lazy-loaded module, and adding a wildcard 404 page. Through this project, I learned how Angular enables efficient navigation in Single Page Applications.
+
+---
+
+# Day 10 – Reactive Forms & Validation**
+
+This hands-on project demonstrates Angular Reactive Forms using `FormBuilder` and `FormControl`. It includes implementing built-in and custom validators, displaying validation messages, managing form states (`dirty`, `touched`, and `valid`), and creating a signup form with password confirmation validation. Through this project, I learned how to build scalable and maintainable forms using Angular's reactive approach.
+
+---
+
+# **Day 11 – HttpClient & REST APIs**
+
+This hands-on project demonstrates API integration using Angular's `HttpClient`. It includes performing GET, POST, PUT, and DELETE operations, consuming typed API responses, using Observables, and displaying data with the `AsyncPipe`. The project also implements loading indicators and error handling while fetching data from a public REST API. Through this project, I learned how Angular communicates with backend services efficiently.
+
+---
+
+# Day 12 – RxJS in Practice**
+
+This hands-on project demonstrates practical usage of RxJS in Angular applications. It includes implementing a real-time search feature using `debounceTime`, `distinctUntilChanged`, `switchMap`, `map`, and `takeUntilDestroyed` to optimize API calls and cancel stale requests. The project also handles loading states and API errors while following reactive programming principles. Through this project, I gained practical experience in building responsive and efficient Angular applications using RxJS.
+
+---
+
+# Day 13 – Pipes, Custom Directives & Lifecycle Hooks**
+
+This hands-on project demonstrates Angular Custom Pipes, Custom Attribute Directives, and Lifecycle Hooks using standalone components. It includes creating a reusable `timeAgo` pipe, implementing a highlight-on-hover directive using `HostListener` and `HostBinding`, and understanding the Angular component lifecycle through `constructor`, `ngOnInit`, and `ngOnDestroy`. Through this project, I learned how to build reusable UI features, manage DOM interactions, and handle component initialization and cleanup effectively.
+
+---
+
+# Day 14 – Route Guards, HTTP Interceptors & Shared State**
+
+This hands-on project demonstrates Angular authentication using Functional Route Guards, HTTP Interceptors, and shared application state. It includes building a Login and Dashboard flow, implementing an `AuthService` for token management, protecting routes with a Functional `CanActivate` Guard, and preparing an HTTP Interceptor to automatically attach authentication tokens and handle `401 Unauthorized` responses. Through this project, I learned how Angular secures routes, centralizes HTTP request handling, and manages shared application state using modern Angular best practices.
