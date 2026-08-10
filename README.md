@@ -87,3 +87,9 @@ This hands-on project demonstrates Angular Custom Pipes, Custom Attribute Direct
 # Day 14 – Route Guards, HTTP Interceptors & Shared State**
 
 This hands-on project demonstrates Angular authentication using Functional Route Guards, HTTP Interceptors, and shared application state. It includes building a Login and Dashboard flow, implementing an `AuthService` for token management, protecting routes with a Functional `CanActivate` Guard, and preparing an HTTP Interceptor to automatically attach authentication tokens and handle `401 Unauthorized` responses. Through this project, I learned how Angular secures routes, centralizes HTTP request handling, and manages shared application state using modern Angular best practices.
+
+---
+
+# Day 15 – Angular Material + Accessibility
+ 
+Created a separate Material Todo project to practice Angular Material components and accessibility. The project focuses on building a clean Todo UI using mat-toolbar, mat-card, mat-form-field, matInput, and Material buttons. Implemented task creation, task completion, deletion, empty-state handling, and Angular @for/@if control flow. Also applied accessibility best practices by using proper form labels, meaningful button text, correct input types, and accessible UI structure.

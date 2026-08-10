@@ -1,0 +1,130 @@
+<mat-toolbar color="primary">
+
+  <span>Material Todo</span>
+
+</mat-toolbar>
+
+
+<div class="container">
+
+  <h1>My Tasks</h1>
+
+
+  <mat-card class="form-card">
+
+    <mat-card-header>
+    
+      <mat-card-title>
+        Add New Task
+      </mat-card-title>
+
+    </mat-card-header>
+
+
+    <mat-card-content>
+
+      <mat-form-field
+        appearance="outline"
+        class="task-input">
+
+        <mat-label>Task Name</mat-label>
+
+        <input
+          matInput
+          type="text"
+          [(ngModel)]="taskTitle"
+          (keyup.enter)="addTask()"
+          placeholder="Enter task name">
+
+      </mat-form-field>
+
+
+      <button
+        mat-raised-button
+        color="primary"
+        type="button"
+        (click)="addTask()">
+
+        Add Task
+
+      </button>
+
+    </mat-card-content>
+
+  </mat-card>
+
+
+  @if (tasks.length === 0) {
+
+    <mat-card class="empty-card">
+
+      <mat-card-content>
+
+        <h2>No Tasks Yet</h2>
+
+        <p>
+          Add your first task to get started.
+        </p>
+
+      </mat-card-content>
+
+    </mat-card>
+
+  }
+
+
+  <div class="task-list">
+
+    @for (task of tasks; track task.id) {
+
+      <mat-card class="task-card">
+
+        <mat-card-header>
+
+          <mat-card-title>
+            {{ task.title }}
+          </mat-card-title>
+
+        </mat-card-header>
+
+
+        <mat-card-content>
+
+          <p>
+            Status:
+            {{ task.completed ? 'Completed' : 'Pending' }}
+          </p>
+
+        </mat-card-content>
+
+
+        <mat-card-actions>
+
+          <button
+            mat-stroked-button
+            type="button"
+            (click)="toggleTask(task)">
+
+            {{ task.completed ? 'Mark Pending' : 'Complete' }}
+
+          </button>
+
+
+          <button
+            mat-button
+            type="button"
+            (click)="deleteTask(task.id)">
+
+            Delete
+
+          </button>
+
+        </mat-card-actions>
+
+      </mat-card>
+
+    }
+
+  </div>
+
+</div>
