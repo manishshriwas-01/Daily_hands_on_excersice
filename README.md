@@ -93,3 +93,17 @@ This hands-on project demonstrates Angular authentication using Functional Route
 # Day 15 – Angular Material + Accessibility
  
 Created a separate Material Todo project to practice Angular Material components and accessibility. The project focuses on building a clean Todo UI using mat-toolbar, mat-card, mat-form-field, matInput, and Material buttons. Implemented task creation, task completion, deletion, empty-state handling, and Angular @for/@if control flow. Also applied accessibility best practices by using proper form labels, meaningful button text, correct input types, and accessible UI structure.
+
+
+# Day 16-CLI Note Tool — 
+
+Today I built a standalone CLI Note Tool using Node.js to practice file handling and command-line concepts. I used fs/promises with readFile() and writeFile() to read and save notes in a JSON file, path.join() to create the file path, and JSON.parse() / JSON.stringify() to convert between JSON and JavaScript data. The tool uses process.argv and npm scripts to handle add, list, and delete commands directly from the terminal. I also implemented async/await for asynchronous operations and try/catch with proper error messages for file and input errors.
+
+Features
+Add: npm run notes -- add "Learn Node.js"
+List: npm run notes -- list
+Delete: npm run notes -- delete <id>
+Notes are stored permanently in data/notes.json
+Proper error handling for invalid input and file operations
+
+----
