@@ -107,3 +107,18 @@ Notes are stored permanently in data/notes.json
 Proper error handling for invalid input and file operations
 
 ----
+
+
+
+# Day 17 — Express Hello API —
+
+Today I built a standalone Express Hello API to practice Express.js fundamentals. I learned how to set up an Express server, create routes using GET, work with req and res, and organize routes in a separate Express Router module. I also implemented a request-logger middleware using req.method, req.url, and next() to log incoming requests, and added a 404 handler to handle unknown routes with proper status codes and JSON responses.
+
+Features
+Routes: GET /api/hello, GET /api/about, GET /api/status
+Request Logger: Logs HTTP method and URL for every incoming request
+Router Module: Routes are maintained separately using express.Router()
+404 Handler: Returns 404 Route not found for undefined routes
+Nodemon: Automatically restarts the server when code changes
+JSON Responses: API responses are returned using res.json()
+Request Flow: Request → Logger Middleware → Router → Route → Response
