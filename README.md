@@ -122,3 +122,19 @@ Router Module: Routes are maintained separately using express.Router()
 Nodemon: Automatically restarts the server when code changes
 JSON Responses: API responses are returned using res.json()
 Request Flow: Request → Logger Middleware → Router → Route → Response
+
+---
+
+# Day 18 — REST API Design (CRUD)
+
+Today I built a standalone in-memory REST API for tasks using Node.js and Express.js to practice CRUD operations and REST API conventions. I learned how to design resource-based endpoints using HTTP methods, handle request bodies with express.json(), use route parameters with req.params, query parameters with req.query, and return appropriate HTTP status codes such as 200, 201, 204, and 404. I also implemented task filtering based on status using query parameters.
+
+Features
+Create: POST /tasks — Create a new task with 201 Created
+Read All: GET /tasks — Get all tasks
+Read One: GET /tasks/:id — Get a specific task
+Update: PUT /tasks/:id — Update an existing task
+Delete: DELETE /tasks/:id — Delete a task with 204 No Content
+Filtering: GET /tasks?status=todo — Filter tasks by status
+Error Handling: Returns 404 Not Found when a task does not exist
+In-Memory Data: Tasks are stored temporarily in a JavaScript array without using a database
