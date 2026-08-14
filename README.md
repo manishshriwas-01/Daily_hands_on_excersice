@@ -138,3 +138,18 @@ Delete: DELETE /tasks/:id — Delete a task with 204 No Content
 Filtering: GET /tasks?status=todo — Filter tasks by status
 Error Handling: Returns 404 Not Found when a task does not exist
 In-Memory Data: Tasks are stored temporarily in a JavaScript array without using a database
+
+----
+
+# Day 19 — Validation, Errors & Config
+
+Today I built a standalone Express.js hands-on project to practice request validation, centralized error handling, and environment-based configuration. I used express-validator to validate incoming task data, implemented custom validation messages, and created a centralized error-handling middleware to return consistent JSON error responses. I also learned how to use dotenv and environment variables to manage the server port and added .env to .gitignore to keep configuration and secrets out of Git.
+
+Features
+Request Validation: Validates task title and status using express-validator
+Custom Validation: Added rules for required title, minimum title length, and allowed status values (todo/done)
+Central Error Handler: Handles errors through a centralized Express error middleware
+Consistent JSON Errors: Returns structured error responses with field and message
+Environment Configuration: Uses .env, dotenv, and process.env.PORT for server configuration
+Git Security: Added .env and node_modules/ to .gitignore
+Error Status: Returns 400 Bad Request for invalid request data
