@@ -153,3 +153,19 @@ Consistent JSON Errors: Returns structured error responses with field and messag
 Environment Configuration: Uses .env, dotenv, and process.env.PORT for server configuration
 Git Security: Added .env and node_modules/ to .gitignore
 Error Status: Returns 400 Bad Request for invalid request data
+
+
+---
+
+# Day 20 — JWT Authentication 🔐
+
+Today I learned the basics of authentication using bcrypt and JWT. I implemented user registration with password hashing, login with bcrypt.compare(), JWT token generation using jwt.sign(), and an authentication middleware using jwt.verify(). I also created a protected /profile route that requires a valid Bearer token.
+
+Features
+
+Register user with bcrypt password hashing
+Login with password verification
+JWT token generation
+JWT authentication middleware
+Protected /profile route
+Handling missing and invalid/expired tokens

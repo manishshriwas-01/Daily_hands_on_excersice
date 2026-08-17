@@ -1,5 +1,25 @@
 {
   "dependencies": {
     "dotenv": "^17.4.2"
-  }
+  },
+  "name": "hands_on",
+  "version": "1.0.0",
+  "description": "This hands-on project focuses on the fundamentals of JavaScript, including variables, data types, `let` and `const`, scope,  comparison operators, truthy and falsy values, conditional statements, loops, and functions. As part of the exercises, I implemented   **FizzBuzz** and a **Temperature Converter** using pure functions with input validation and manual test cases. Through this project,   I built a strong foundation in JavaScript programming and problem-solving.",
+  "main": "hands_on_1.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishshriwas-01/Daily_hands_on_excersice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/manishshriwas-01/Daily_hands_on_excersice/issues"
+  },
+  "homepage": "https://github.com/manishshriwas-01/Daily_hands_on_excersice#readme"
 }
