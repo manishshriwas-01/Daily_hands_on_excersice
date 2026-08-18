@@ -157,7 +157,7 @@ Error Status: Returns 400 Bad Request for invalid request data
 
 ---
 
-# Day 20 — JWT Authentication 🔐
+# Day 20 — JWT Authentication 
 
 Today I learned the basics of authentication using bcrypt and JWT. I implemented user registration with password hashing, login with bcrypt.compare(), JWT token generation using jwt.sign(), and an authentication middleware using jwt.verify(). I also created a protected /profile route that requires a valid Bearer token.
 
@@ -169,3 +169,18 @@ JWT token generation
 JWT authentication middleware
 Protected /profile route
 Handling missing and invalid/expired tokens
+
+# Day 21 — MongoDB Basics 
+
+Today I learned the fundamentals of MongoDB and practiced CRUD operations using Node.js, Express.js, and the MongoDB Node.js driver. I worked with documents and collections, performed filtered queries using comparison operators, used projection to select specific fields, and learned how MongoDB indexes improve query performance. I also used explain("executionStats") to analyze query execution and verified index usage through IXSCAN.
+
+Features
+MongoDB database and collection setup
+CRUD operations using insertOne(), find(), findOne(), updateOne(), and deleteOne()
+Filtered queries using $gt, $gte, $lt, and $in
+Projection for selecting specific fields
+MongoDB Compass for database operations and verification
+Created an index on the department field
+Used explain("executionStats") for query performance analysis
+Verified IXSCAN and index usage
+Connected MongoDB with Express using the MongoDB Node.js driver
