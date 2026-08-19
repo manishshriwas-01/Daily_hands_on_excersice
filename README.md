@@ -184,3 +184,19 @@ Created an index on the department field
 Used explain("executionStats") for query performance analysis
 Verified IXSCAN and index usage
 Connected MongoDB with Express using the MongoDB Node.js driver
+----
+
+# Day 22 — Mongoose ODM 
+
+Today I learned Mongoose ODM and implemented schemas, models, validation, ref relationships, populate(), timestamps, and lean(). I created separate User and Task models with CRUD APIs, connected Task with User using ObjectId references, and used populate() to fetch related user details. I also organized the APIs into separate route files for better project structure.
+
+Features
+Mongoose schemas and models
+User & Task CRUD operations
+Schema validation and default values
+ref: "User" for document relationships
+populate() for fetching related user data
+timestamps: true for createdAt and updatedAt
+lean() for optimized read queries
+Separate routes/ folder for API routes
+Tested APIs using Postman and verified data in MongoDB Compass
