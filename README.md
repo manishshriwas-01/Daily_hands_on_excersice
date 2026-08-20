@@ -200,3 +200,19 @@ timestamps: true for createdAt and updatedAt
 lean() for optimized read queries
 Separate routes/ folder for API routes
 Tested APIs using Postman and verified data in MongoDB Compass
+
+# Day 23 — Express + MongoDB Atlas 
+
+Today I learned how to integrate Express.js with MongoDB Atlas using Mongoose. I configured environment variables, connected the application to MongoDB Atlas, persisted the Tasks CRUD API, implemented async/await error handling using asyncHandler, and added centralized error handling and not-found responses.
+
+Features
+MongoDB Atlas connection using Mongoose
+Environment configuration using .env and dotenv
+Separate database connection module
+Task CRUD APIs with MongoDB Atlas
+Async/await error handling
+Custom asyncHandler middleware
+Centralized error handling middleware
+404 Not Found handling for missing tasks
+Tested CRUD APIs using Postman
+Verified persisted data in MongoDB Atlas
