@@ -3,12 +3,15 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import taskRoutes from "./routes/taskRoutes.js";
 import errorHandler from "./middleware/errorHandler.js";
+import authRoutes from "./routes/authRoutes.js";
 
 dotenv.config();
 
 const app = express();
 
 app.use(express.json());
+
+export default app;
 
 const PORT = process.env.PORT || 3000;
 
@@ -19,7 +22,9 @@ app.get("/", (req, res) => {
 });
 
 app.use("/tasks", taskRoutes);
-app.use(errorHandler)
+app.use("/auth", authRoutes);
+
+app.use(errorHandler);
 
 async function startServer() {
   try {
@@ -33,4 +38,6 @@ async function startServer() {
   }
 }
 
-startServer();
+if (process.env.NODE_ENV !== "test") {
+  startServer();
+}

@@ -200,6 +200,7 @@ timestamps: true for createdAt and updatedAt
 lean() for optimized read queries
 Separate routes/ folder for API routes
 Tested APIs using Postman and verified data in MongoDB Compass
+---
 
 # Day 23 — Express + MongoDB Atlas 
 
@@ -216,3 +217,41 @@ Centralized error handling middleware
 404 Not Found handling for missing tasks
 Tested CRUD APIs using Postman
 Verified persisted data in MongoDB Atlas
+---
+
+# Day 24 — Testing Basics with Jest & Supertest 
+
+Today I learned and implemented automated API testing using Jest and Supertest.
+
+The Day 24 testing hands-on was continued in the existing Day 23 `hands_on_23` project instead of creating a separate project.
+
+# Topics Covered
+
+- Postman/Thunder Client testing
+- Jest testing framework
+- Supertest for API testing
+- Unit testing vs Integration testing
+- Happy path testing
+- Error path testing
+- Test data creation
+- Testing Express APIs
+- Testing MongoDB-backed APIs
+- ESM configuration for Jest
+- Handling asynchronous database operations in tests
+
+
+## Hands-on Exercise
+
+**Exercise:** Jest + Supertest tests for the Tasks and Auth endpoints covering happy and error paths.
+
+## Day 23 Project Used
+
+The Day 24 hands-on was added to the existing:
+
+`hands_on_23`
+project.
+No separate project was created.
+## Testing Setup
+Installed:
+```bash
+npm install --save-dev jest supertest
